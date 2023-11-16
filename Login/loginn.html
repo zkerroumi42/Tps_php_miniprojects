@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Client portal for Clicboutic">
+<meta name="robots" content="noindex">
+<meta name="csrf-token" content="tWTv8RM1cJnIVZJGZt9GaUQ0X2yyXOKf73KNsoiq">
+<meta name="turbo-cache-control" content="no-cache">
+
+    
+    <link rel="icon" href="https://cdn.spp.io/img/favicons/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="https://cdn.spp.io/img/favicons/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="https://cdn.spp.io/img/favicons/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="https://cdn.spp.io/img/favicons/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="https://cdn.spp.io/img/favicons/favicon-128.png" sizes="128x128">
+
+    
+    <link rel="shortcut icon" href="https://cdn.spp.io/img/favicons/favicon-196.png" sizes="196x196">
+
+    
+    <link rel="apple-touch-icon" href="https://cdn.spp.io/img/favicons/favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="https://cdn.spp.io/img/favicons/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="https://cdn.spp.io/img/favicons/favicon-180.png" sizes="180x180">
+
+
+
+    <title>Client Portal | Clicboutic</title>
+
+
+    <link rel="stylesheet" href="https://cdn.spp.io/css/clients.css?id=a8f5bdadaab2e224c8f938addc50eeb3" data-turbo-track="reload">
+
+
+            <script src="https://js.stripe.com/v3/" defer></script>
+
+            
+    
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+
+<script src="https://cdn.spp.io/js/manifest.js?id=5c008756997dcbb4f137d15ff4864077" data-turbo-track="reload" defer></script>
+<script src="https://cdn.spp.io/js/vendor.js?id=1581f5be5d60f8b94f6695e51768c0bf" data-turbo-track="reload" defer></script>
+
+
+
+    <script src="https://cdn.spp.io/js/clients.js?id=983ec5d0bb95d02bd5f4731eadc05c67" data-turbo-track="reload" defer></script>
+
+
+<script src="https://kit.fontawesome.com/51761b1c6c.js" integrity="sha384-TkHCDK2R4IB93mPBtcXB9TEEMBrgr+TauHljGd1FRtIUOlP3bzlwhereXI2hOKjr" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.spp.io/help-widget/widget.js" async></script>
+
+    <!-- Loading indicator -->
+
+<!-- Google Tag Manager -->
+</head>
+
+<body class="vertical-center">
+    <div class="container-fluid">
+
+                    <div class="navbar navbar-public">
+                <a href="https://clicboutic.spp.io" class="navbar-brand">
+                                            <img src="https://spp-clients.s3-accelerate.amazonaws.com/010a4362-ed4c-4461-b219-653f51e8a14a/clicboutic-logo.png" alt="Clicboutic">
+                                    </a>
+            </div>
+        
+        
+            <main class="content">
+                <div id="status">
+    </div>
+
+                    <div class="container container-xs">
+
+        <h1 class="text-center">Create Your Account</h1>
+
+        
+        <form role="form" method="post">
+            <input type="hidden" name="spp_token" id="spp_token">
+
+            <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-label-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name_f"
+                            name="name_f"
+                            value=""
+                            placeholder="First name"
+                            autocomplete="given-name"
+                            required>
+
+                        <label for="name_f">First name</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-label-group">
+                        <input type="text"
+                            class="form-control"
+                            id="name_l"
+                            name="name_l"
+                            value=""
+                            placeholder="Last name"
+                            autocomplete="family-name"
+                            required>
+
+                        <label for="name_l">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-label-group">
+                <input type="email"
+                    name="contact"
+                    id="contact"
+                    class="form-control"
+                    value=""
+                    placeholder="Email"
+                    autocomplete="email"
+                    required>
+
+                <label for="contact">Email</label>
+            </div>
+
+            <div class="form-label-group">
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    value=""
+                    placeholder="Password"
+                    autocomplete="new-password"
+                    required>
+
+                <label for="password">Password</label>
+            </div>
+
+            
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Sign up</button>
+            </div>
+
+            <div class="">Already have an account? <a href="https://clicboutic.spp.io/login">Sign in</a></div>
+        </form>
+    </div>
+
+            </main>
+        
+                    <footer class=" pt-3 ">
+        &nbsp;
+    </footer>
+
+
+<div class="modal" id="spp-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div class="modal" id="upgrade-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content"></div>
+    </div>
+</div> 
+            </div>
+</body>
+</html>
