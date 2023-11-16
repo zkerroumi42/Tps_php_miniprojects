@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test multiplication</title>
+</head>
+<body>
+    <script>
+     number=prompt('Entrer un nombre :');
+     document.write('<table border align=center width=50% >');
+     document.write('<caption > table de multiplication </caption >');
+
+
+        for (let i = 0; i < 10; i++) {
+            var resultat=i*number;
+            document.write('<tr>');
+            document.write("<th> "+ number +"*"+i+ "=</th><th>"+resultat+"</th> ");
+            document.write('<tr>');   
+        }
+     document.write('<table>');
+
+    </script>
+</body>
+</html>

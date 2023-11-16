@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page16</title>
+    <script>
+        function f(frm,nm,cp){
+            var nom=document.getElementById(nm);
+            var cop=document.getElementById(cp);
+            cop.value=nom.value;
+        }
+    </script>
+</head>
+<body>
+
+        <form action="form1" method="get" id="form1" name="form1">
+            <input type="text" name="nom" id="nom" value="">
+            <input type="text" name="copy" id="copy" value="">
+            <input type="submit" value="copy" onclick="f('form1','nom','copy');">
+        </form>
+       
+</body>
+</html>

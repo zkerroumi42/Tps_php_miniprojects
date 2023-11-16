@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Questionnaire à choix multiples</h1>
+    <form id="qcm-form">
+      <h2>Question 1</h2>
+      <p>Quelle est la capitale de la France ?</p>
+      <label><input type="radio" name="q1" value="paris">Paris</label><br>
+      <label><input type="radio" name="q1" value="berlin">Berlin</label><br>
+      <label><input type="radio" name="q1" value="londres">Londres</label><br>
+      
+      <h2>Question 2</h2>
+      <p>Quelle est la couleur du cheval blanc d'Henri IV ?</p>
+      <label><input type="radio" name="q2" value="blanc">Blanc</label><br>
+      <label><input type="radio" name="q2" value="noir">Noir</label><br>
+      <label><input type="radio" name="q2" value="rouge">Rouge</label><br>
+      
+      <h2>Question 3</h2>
+      <p>Quel est l'élément chimique de symbole O ?</p>
+      <label><input type="radio" name="q3" value="oxygene">Oxygène</label><br>
+      <label><input type="radio" name="q3" value="or">Or</label><br>
+      <label><input type="radio" name="q3" value="azote">Azote</label><br>
+    </form>
+    
+    <button type="button" onclick="verifierQCM()">Vérifier les réponses</button>
+    
+    <p>Nombre de réponses correctes : <input type="text" id="score" readonly></p>
+    
+    <script>
+      function verifierQCM() {
+        var form = document.getElementById("qcm-form");
+        var score = 0;
+        if (form.elements["q1"].value == "paris") {
+          score++;
+        }
+        if (form.elements["q2"].value == "blanc") {
+          score++;
+        }
+        if (form.elements["q3"].value == "oxygene") {
+          score++;
+        }
+        document.getElementById("score").value = score;
+      }
+    </script>
+  </body>
+</html>

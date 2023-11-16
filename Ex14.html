@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page14</title>
+</head>
+<body>
+      <script>
+        var images=["album photos/i1.png","album photos/i2.png","album photos/i3.png","album photos/i4.png"];
+      
+        var curindex=0;
+        function afficher(){
+           document.getElementById('myimage').src=images[curindex];
+        }
+       
+        function last(){
+        curindex--;
+        if(curindex<0){
+          curindex=images.length -1;    
+        }
+        afficher();
+        }
+        function next(){
+            curindex++;
+        if(curindex>=images.length){
+          curindex=0;    
+        }
+        afficher();
+
+        }
+
+      </script>
+    <img src="default.JPG" alt="" id="myimage" width="200px" height="200px"> <br> <br>
+    <button type="submit" onclick="last();">last</button>
+    <button type="submit" onclick="next()">next</button>
+
+</body>
+</html>

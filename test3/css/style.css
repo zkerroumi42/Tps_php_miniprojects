@@ -1,0 +1,15 @@
+.t1{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.t2{
+    color: blue;
+}
+.table,td,th{
+    border: 1px solid black;
+}
+.table th{
+    background-color: silver;
+
+}

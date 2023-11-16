@@ -1,0 +1,20 @@
+header{
+    height: 2em;
+    background-color: aqua;
+}
+.section1{
+    height: 10em;
+    background-color: blueviolet;
+}
+.section2{
+    background-color: azure;
+    height: 10em;
+
+}
+.section3{
+    background-color: black;
+    height: 10em;
+}
+footer{
+background-color: brown;    height: 10em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>page7</title>
+</head>
+<body>
+    <script>
+       function myfunction(a,b,c) {
+       var s=0;
+        var m;
+        s=parseInt(a)+parseInt(b)+parseInt(c);
+        m=s/3;
+        
+        document.getElementById("Moyenne").value=m;
+       }
+       function reset() {
+        nb1.value='';
+        nb2.value='';
+        nb3.value='';
+        Moyenne.value=0;
+        
+       }
+
+
+    </script>
+           <div> 
+            <table>
+                <tr> <th>Entrer le 1ere nombre :</th>  <td> <input type="number"  name="nb1" id="nb1" autofocus></td></tr>
+                <tr> <th>Entrer le 2eme nombre :</th>  <td> <input type="number" name="nb2" id="nb2"></td></tr>
+                <tr> <th>Entrer le 3eme nombre :</th>  <td> <input type="number" name="nb3" id="nb3"></td></tr>
+                <tr> <th>Moyenne des 3 nombre :</th>  <td> <input type="text" value="0" name="Moyenne" id="Moyenne" readonly></td></tr>
+            </table>
+            <input type="reset" value="Effacer" onclick="reset();" class="btn"> <input class="btn" type="button" onclick="myfunction(nb1.value,nb2.value,nb3.value);" value="calculer">
+        </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page12</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>mon formulaire :</legend>
+            <label for="text">Mon text : <input type="text" name="text" id="text"></label> <br>
+            <label for="password">Mon Mon password : <input type="password" name="password" id="password"></label><br>
+            <label for="choixmul">casacocher : <input type="checkbox" name="checkbox" id="checkbox"></label><br>
+            <label for="radio">choisir button :</label>
+            <label for="btn0"><input type="radio" name="btn" id="btn0" checked value="btn0">  button1</label>
+            <label for="btn1"><input type="radio" name="btn" id="btn1">  button1</label>
+            <label for="btn2"><input type="radio" name="btn" id="btn2">  button1</label>
+            <label for="btn3"><input type="radio" name="btn" id="btn3">  button1</label>
+            <label for="btn4"><input type="radio" name="btn" id="btn4">  button1</label>
+            <label for="btn5"><input type="radio" name="btn" id="btn5">  button1</label><br>
+            <label for="m">choisir une valeur :</label>
+            <select name="m" id="m">
+                <option value="red">red</option>
+                <option value="aqua">aqua</option>
+                <option value="blue">blue</option>
+                <option value="black">black</option>
+            </select> <br>
+            <label for="area">un commentaire :<textarea name="area" id="area" cols="30" rows="10"></textarea>
+            </label><br>
+            <button type="submit" onclick="alert(document.getElementsByName('btn').value+''+text.value+''+password.value +''+area.value+''+document.getElementById('m').options[document.getElementById('m').selectedIndex].value)">alert_formulaire_simple</button>
+
+        
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

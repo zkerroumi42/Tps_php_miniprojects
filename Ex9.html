@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 9</title>
+</head>
+<body>
+    <script>
+        function F1(){
+          document.getElementById('i2').src="i4.png";
+        }
+        function F2(){
+          document.getElementById('i1').src="i3.png";
+        }
+        function F3(){
+          document.getElementById('i1').src="i3.png";
+          document.getElementById('i2').src="i1.png";
+          document.getElementById('i4').src="i2.png";
+          document.getElementById('i3').src="i4.png";
+
+
+        }
+    </script>
+ 
+    <img src="i1.png" alt="img1" height="200px" onmouseenter="F1();" width="200px" id="i1">
+    <img src="i2.png" alt="img2" height="200px" onmouseenter="F2();" width="200px" id="i2"><br>
+    <img src="i3.png" alt="img3" height="200px" onclick="F3();" width="200px" id="i3">
+    <img src="i4.png" alt="img4" height="200px" width="200px" id="i4">
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p{
+    display: flex;
+    justify-content: center;
+}
+#img3{
+    display: none;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+
+    <p align="center">
+        <img src="1.png" id="imag1"
+        onclick="this.style.display='none'; img3.style.display='block';
+        img3.style.position='relative'"
+        onmouseover="img2.style.display='bock';this.style.display='none';
+        img2.style.position='relative'"
+        />
+        <img src="2.png" id="img2" onclick="this.style.display='none';
+        img3.style.display='block' " />
+        <img src="3.png" id="img3"  onclick="this.style.display='none'; 
+        img1.style.display='block'" />
+    </p>
+   
+</body>
+</html>

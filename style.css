@@ -1,0 +1,29 @@
+textarea {
+    color: black;
+    background-color: aqua;
+    display: table;
+    height:30PX;
+}
+div{
+    background-color: aqua;
+    padding: 1em;
+    width: 25%;
+}
+
+
+#n1,#n2,#n3,#n4,#n5,#n6{
+  margin: 10px;
+}
+
+
+#i1{
+    margin: 10px;
+    border: 5px solid black;
+}
+
+.container{
+  width: 420px;
+    height: 200px;
+    background-color:beige;
+    margin: 4em;
+}

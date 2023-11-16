@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+<body>
+    <h1>Envoi de date  par formulaire HTML5</h1>
+  <form id="send_date"  action="#" method="get">
+    <fieldset>
+        <legend>saisie de date  </legend>
+            <label for="">identifiant :  <input type="date" placeholder="jj/mm/aaaa" name="id2" min="2020-01-01" max="2022-12-12">
+            </label> </br>
+            <label for="">Pour envoyer :<input type="submit" name="envoyer_date"  value="Valider"></label>
+       
+    </fieldset>
+</form>
+<form id="send_month"  action="#" method="get">
+<fieldset>
+    <legend>saisie de mois </legend>
+    <label for="">identifiant :  <input type="month" placeholder="jj/mm/aaaa" name="id3" value="2022_02"/> </label> <br>
+    <label for="">Pour envoyer :<input type="submit" name="envoyer_month"  value="Valider"></label>
+</fieldset>
+ </form>
+ <form id="send_week"  action="#" method="get"></form>
+    <fieldset>
+        <legend>saisie de semaine</legend>
+        <label for=""> identifiant : <input type="week" name="id4" value="2022_W08"></label>
+        <br>
+        <label for="">Pour envoyer :<input type="submit" name="envoyer_week"  value="Valider"></label>
+
+    
+    </fieldset>
+</form>
+<form id="send_time"  action="#" method="get">
+    <fieldset>
+        <legend>Saisie de temps </legend>
+      <label for=""> identifiant : <input type="time" name="id5" value="12:00:00" min="12:00 " max="14:00" form="send_time"></label>
+     <br>
+      <label for="">Pour envoyer :<input type="submit" name="envoyer_time"  value="Valider" form="send_time"></label>
+ </fieldset>
+</form>
+<form id="send_datetime_local"  action="#" method="get">
+<fieldset>
+<legend>saisie de date de formulaire local</legend>
+        <label for=""> identifiant : 
+            <input type="datetime-local" name="id6" id=""  value="2022-02-22T12:00" min="2022-02-22T12:00"  max="2022-12-31T14:00"/>
+        </label> <br>
+        <label for="">Pour envoyer :<input type="submit" name="envoyer_datetime_local"  value="Valider"></label>
+
+    </fieldset>
+</form>
+</body>
+</html>

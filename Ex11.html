@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page11</title>
+</head>
+<body>
+    
+    <script>
+        function F(){
+           var a= document.getElementById('m');
+           var b=a.options[a.selectedIndex].value;
+          
+           document.body.style.background=b;
+           alert(b+''+b);
+        }
+    </script>
+    <select name="m" id="m">
+        <option value="red">red</option>
+        <option value="aqua">aqua</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+    </select>
+    <input type="button" onclick="F();" value="go">
+</body>
+</html>

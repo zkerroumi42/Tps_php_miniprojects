@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice1TP1</title>
+</head>
+<body>
+    <h1> Envoi de Fichiers en upload <abbr title="http">http</abbr></h1>
+    <div class="form">
+        <form id="Envoyer" action="#" method="post" enctype="multipart/form-data"></form>
+        <fieldset>
+         
+            <legend> identification </legend>
+            <div class="iden">
+            <label for="identifiant">identifiant :</label>
+            <input type="text" name="" id="" required="required" placeholder="id" pattern="^[a-z].* " autofocus title="    "> 
+        </div>
+         <div class="modp">
+            <label for="password">mot de passe :</label>
+            <input type="password" name="" id="" required="required" 
+            pattern="(?=^.{4,8}$) ( ?=.*\d) (?=.*[A-Z]) (?=.*[a-z]) .*\w.*$" >
+       
+        </div>
+    </fieldset>
+      <fieldset>
+         
+        <legend> transfert des fichiers  </legend>
+ <input type="hidden" name="MAX_FILE_SIZE" value="3000" multiple>
+        <div class="trans">
+        <label for="">Choisir des fichiers : <input type="file" name="select" id=""> aucun fichier choisi</label>
+
+
+<div>
+    <label for=""> Pour envoyer :   <input type="submit" name="Envoyer" value="Valider"></label>
+  
+
+</div>
+                    
+       
+    </div>
+</fieldset>
+</div>
+</body>
+</html>

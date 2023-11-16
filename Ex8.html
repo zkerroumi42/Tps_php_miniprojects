@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>page8</title>
+    <script>
+          function myfunction(n1,n2) {
+            var a=0,b=0;
+            t1=parseInt(n1);
+            t2=parseInt(n2);
+            if (t1 ===3) {
+                a=1;
+            }
+            if(t2 === 6){
+                b=1
+            }
+            var nbcorrect=a+b;
+            alert("le nombre des affirmation correct est :"+nbcorrect);
+            // a=confirm("le nombre des affirmation correct est :"+nbcorrect);
+            // document.write(a);
+            
+          }
+    </script>
+</head>
+<body>
+    <Label>3*1  : <input type="number" id="n1" autofocus></Label> <br>
+    <Label>3*2  : <input type="number" id="n2"></Label><br>
+    <!-- <Label>3*6  : <input type="text" id="n3"></Label><br>
+    <Label>3*7  : <input type="text" id="n4"></Label><br>
+    <Label>3*8  : <input type="text" id="n5"></Label><br>
+    <Label>3*9  : <input type="text" id="n6"></Label><br>
+    <Label>3*10 : <input type="text" id="n7"></Label> -->
+    <input type="button" value="Verifier multiplication" onclick="myfunction(n1.value,n2.value);">
+</body>
+</html>

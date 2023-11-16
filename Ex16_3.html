@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3</title>
+</head>
+<body>
+    
+    <script>
+        function f() {
+           var capital= document.getElementById('pays').options[document.getElementById('pays').selectedIndex].value;
+            document.getElementById('capital').value=capital;            
+        }
+
+
+    </script>
+    <select id="pays" onchange="f();">
+        <option value="Rabat" selected>Maroc</option>
+        <option value="Paris">france</option>
+        <option value="Tokyo">Japon</option>
+        <br>
+    </select>
+    <input type="text" name="capital" id="capital" value="Rabat">
+
+</body>
+</html>

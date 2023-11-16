@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>page 6</title>
+</head>
+<body>
+    <script>
+      function myfunction(n){
+        var resultat=0;
+        for (let i = 0; i<= n; i++) {
+            resultat +=i;
+        }
+       document.getElementById("myid").innerHTML= "somme est :"+ resultat;
+      }
+    </script>
+    <input type="text" name="nb" id="nb" value="10"> 
+    <input type="button" onclick="myfunction(nb.value);" value="Push me">
+    <textarea name="" id="myid" cols="30" rows="10"></textarea>
+</body>
+</html>

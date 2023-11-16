@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1> Test de la désactivation par fieldset</h1>
+        <fieldset id="setfield">
+            <legend> Envoi d'un message </legend>
+            <div>
+            <label for=""> Votre nom : 
+                <input type="text" name="" id="" placeholder="Entrer le nom">
+            </label>
+        </div>
+        <div>
+            <label for=""> Le message : 
+                <textarea formaction="formulairetp1.html" placeholder="Entrer le message " name="" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div>
+            <label for=""> Pour envoyer :
+                <input type="button" value="Valider">
+            </label>
+        </div>
+        
+        </label>
+        </fieldset>
+        <label for="">Pour activer le formulaire ci-dessus : 
+            <input type="button" value="Activer/disactiver le formulaire " onclick="setfield.disabled!=setfield.disabled;" action="formulairetp1.html">
+        </label>
+    </form>
+</body>
+</html>
