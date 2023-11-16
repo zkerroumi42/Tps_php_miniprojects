@@ -1,0 +1,9 @@
+.form{
+    justify-content: center;
+    align-items: center;
+}
+
+table tr th,td {
+    border: 1px solid black;
+    width: 20%;
+}
